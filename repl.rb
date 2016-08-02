@@ -8,9 +8,11 @@ require_relative 'models/theater_movie.rb'
 
 ActiveRecord::Base.establish_connection(
   adapter:  'postgresql',
-  database: 'devflix',
+  database: 'gaflix',
   host:     'localhost'
 )
+
+Movie.create(title: "Batman", rating: 100)
 
 binding.pry
 
